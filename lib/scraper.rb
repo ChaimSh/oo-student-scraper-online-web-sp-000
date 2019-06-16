@@ -30,6 +30,8 @@ class Scraper
         case info.attribute("href").value
         when /twitter/
           students_sm[:twitter] = info.attribute("href").value
+        when /github/
+          students_sm[:github] = info.attribute("href").value
         when /linkedin/
           students_sm[:linkedin] = info.attribute("href").value
         when /blog/
