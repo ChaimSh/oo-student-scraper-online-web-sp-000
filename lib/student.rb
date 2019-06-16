@@ -13,8 +13,8 @@ class Student
     students_array.each { |student| self.new(student)}
   end
 
-  def add_student_attributes(attributes_hash)
-
+  def add_student_attributes(students_sm)
+    students_sm.each {|key, value| self.send(("#{key}="), value)}
   end
 
   def self.all
