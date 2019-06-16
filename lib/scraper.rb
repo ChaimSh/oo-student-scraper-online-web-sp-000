@@ -34,7 +34,7 @@ class Scraper
           students_sm[:github] = info.attribute("href").value
         when /linkedin/
           students_sm[:linkedin] = info.attribute("href").value
-        when /blog/
+        else
           students_sm[:blog] = info.attribute("href").value
       end
     end
