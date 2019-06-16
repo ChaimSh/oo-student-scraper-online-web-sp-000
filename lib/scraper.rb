@@ -40,3 +40,4 @@ class Scraper
  students_sm[:bio] = profile_doc.css("div.bio-content div.description-holder").text.strip
  students_sm
 end
+end
